@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imgButtonMateri"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#81CD27"
+        android:src="@drawable/ic_baseline_library_books_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258"
+        tools:text="@string/dashboardCourse" />
+
+    <ImageButton
+        android:id="@+id/imgButtonQuiz"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#DECD32"
+        android:src="@drawable/ic_baseline_quiz_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgButtonMateri"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgButtonMateri"
+        app:layout_constraintTop_toBottomOf="@+id/imgButtonMateri"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/dashboardCourse" />
+
+    <ImageButton
+        android:id="@+id/imgButtonVideo"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#30505F"
+        android:src="@drawable/ic_baseline_ondemand_video_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imgButtonMateri"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258" />
+
+    <ImageButton
+        android:id="@+id/imgButtonNote"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#817B4C"
+        android:src="@drawable/ic_baseline_event_note_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgButtonVideo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgButtonVideo"
+        app:layout_constraintTop_toBottomOf="@+id/imgButtonVideo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/dashboardJudul"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/subJudulMateri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/dashboardCourse"
+        android:textColor="#FFFCFC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgButtonMateri"
+        app:layout_constraintStart_toStartOf="@+id/imgButtonMateri"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.386" />
+
+    <TextView
+        android:id="@+id/subJudulQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/dashboardQuiz"
+        android:textColor="#FFFCFC"
+        app:layout_constraintEnd_toEndOf="@+id/imgButtonQuiz"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="@+id/imgButtonQuiz"
+        app:layout_constraintTop_toTopOf="@+id/imgButtonQuiz" />
+
+    <TextView
+        android:id="@+id/subJudulVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/dashboardVideo"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgButtonVideo"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/imgButtonVideo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.386" />
+
+    <TextView
+        android:id="@+id/subJudulAboutMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/dashboardNote"
+        android:textColor="#FFFCFC"
+        app:layout_constraintEnd_toEndOf="@+id/imgButtonNote"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/imgButtonNote"
+        app:layout_constraintTop_toTopOf="@+id/imgButtonNote" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
