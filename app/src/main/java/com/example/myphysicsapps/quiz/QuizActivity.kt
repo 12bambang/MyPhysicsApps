@@ -15,21 +15,21 @@ class QuizActivity : AppCompatActivity() {
     private var rightAnswer: String? = null
     private var rightAnswerCount = 0
     private var quizCount = 1
-    private val QUIZ_COUNT = 5
+    private val QUIZ_COUNT = 12
 
     private val quizData = mutableListOf(
-        mutableListOf("Satuan kuat arus listrik dalam SI adalah", "Ampere","Volt","Coulomb","Ohm"),
-        mutableListOf("Pesawat sederhana yang digunakan saat mengerek bendera ketika upacara setiap hari Senin adalah","Katrol","Pengungkit","Roda berporos","Bidang miring"),
-        mutableListOf("Sebuah besi didekatkan dengan sebuah magnet sehingga besi tersebut menjadi magnet dan mampu menarik serbuk besi yang ada di dekatnya, Hal tersebut adalah pembuatan magnet dengan cara", "Induksi","Elektromagnetik", "Gosokan", "Arus listrik"),
-        mutableListOf("Waktu yang diperlukan oleh bumi untuk berputar pada porosnya dinamakan","Rotasi","Revolusi", "Kala rotasi", "Kala revolusi"),
-        mutableListOf("Berikut yang termasuk teladan dari energi listrik diubah menjadi energi gerak yakni","kipas angin","lampu","TV","setrika"),
-        mutableListOf("Permainan trampolin memanfaatkan gaya","Pegas","Gesek","Gravitasi","Panas"),
-        mutableListOf("Dua muatan titik yang sejenis dan sama besar qA = qB =10^ -2 C pada jarak 10 cm satu dari yang lain. Gaya tolak yang dialami kedua muatan itu (dalam Newton) adalah","9.10^ 7", "9.10^ -14", "9.10^ -9","9.10^ -5"),
-        mutableListOf("Rudi mengamati benda yang memiliki sifat-sifat berikut : (1) susunan molekul tidak teratur (2) letak molekul berdekatan (3) dapat berpindah tempat. berdasarkan sifat sifat zat yang di sebutkan benda yang diamati rudi adalah","Air","Asap","Pensil","Penggaris"),
-        mutableListOf("Faktor-faktor yang mempengaruhi besarnya tekanan adalah","luas bidang tekan dan gaya tekan","gaya tekan dan massa benda","gaya tekan dan gaya gravitasi","luas bidang tekan dan gaya gravitasi"),
-        mutableListOf("Perpindahan energi oleh pancaran sinar matahari dinamakan","Radiasi", "Konduksi", "Isolasi", "Konveksi"),
-        mutableListOf("Semua benda yang dapat memancarkan cahaya disebut","Sumber cahaya","Cahaya lampu","Cahaya terang","Benda bercahaya"),
-        mutableListOf("Kaca spion kendaraan adalah salah satu pemanfaatan cermin","Cembung", "Cekung","Datar", "Silinder")
+        mutableListOf("Satuan kuat arus listrik dalam SI adalah","Ampere","Volt","Coulomb","Ohm"),//1
+        mutableListOf("Pes3awat sederhana yang digunakan saat mengerek bendera ketika upacara setiap hari Senin adalah","Katrol","Pengungkit","Roda berporos","Bidang miring"), //2
+        mutableListOf("Sebuah besi didekatkan dengan sebuah magnet sehingga besi tersebut menjadi magnet dan mampu menarik serbuk besi yang ada di dekatnya, Hal tersebut adalah pembuatan magnet dengan cara", "Induksi","Elektromagnetik", "Gosokan", "Arus listrik"), //3
+        mutableListOf("Waktu yang diperlukan oleh bumi untuk berputar pada porosnya dinamakan","Rotasi","Revolusi", "Kala rotasi", "Kala revolusi"), //4
+        mutableListOf("Berikut yang termasuk teladan dari energi listrik diubah menjadi energi gerak yakni","kipas angin","lampu","TV","setrika"), //5
+        mutableListOf("Permainan trampolin memanfaatkan gaya","Pegas","Gesek","Gravitasi","Panas"), //6
+        mutableListOf("Dua muatan titik yang sejenis dan sama besar qA = qB =10^ -2 C pada jarak 10 cm satu dari yang lain. Gaya tolak yang dialami kedua muatan itu (dalam Newton) adalah","9.10^ 7", "9.10^ -14", "9.10^ -9","9.10^ -5"),//7
+        mutableListOf("Rudi mengamati benda yang memiliki sifat-sifat berikut : (1) susunan molekul tidak teratur (2) letak molekul berdekatan (3) dapat berpindah tempat. berdasarkan sifat sifat zat yang di sebutkan benda yang diamati rudi adalah","Air","Asap","Pensil","Penggaris"), //8
+        mutableListOf("Faktor-faktor yang mempengaruhi besarnya tekanan adalah","luas bidang tekan dan gaya tekan","gaya tekan dan massa benda","gaya tekan dan gaya gravitasi","luas bidang tekan dan gaya gravitasi"), //9
+        mutableListOf("Perpindahan energi oleh pancaran sinar matahari dinamakan","Radiasi", "Konduksi", "Isolasi", "Konveksi"), //10
+        mutableListOf("Semua benda yang dapat memancarkan cahaya disebut","Sumber cahaya","Cahaya lampu","Cahaya terang","Benda bercahaya"), //11
+        mutableListOf("Kaca spion kendaraan adalah salah satu pemanfaatan cermin","Cembung", "Cekung","Datar", "Silinder") //12
 
     )
 
@@ -43,7 +43,6 @@ class QuizActivity : AppCompatActivity() {
 
         // shuffle quiz
         quizData.shuffle()
-
         showNextQuiz()
     }
 

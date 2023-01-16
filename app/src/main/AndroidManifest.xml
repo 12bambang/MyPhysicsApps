@@ -70,6 +70,10 @@
             android:name=".materi.MateriActivity"
             android:exported="false"
             android:launchMode="singleTop" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

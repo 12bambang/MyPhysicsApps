@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         imgButtonQuiz.setOnClickListener(this)
 
         val imgButtonNote: ImageButton = findViewById(R.id.imgButtonNote)
-        imgButtonNote.setOnClickListener(this)
+        imgButtonNote.setOnClickListener(this )
 
     }
     override fun onClick(view: View) {

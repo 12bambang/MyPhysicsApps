@@ -11,7 +11,7 @@
     <string name="question">Pertanyaan</string>
     <string name="option">Pilih</string>
     <string name="result_title">Nilai</string>
-    <string name="result_score">%d / 5</string>
+    <string name="result_score">%d / 12</string>
     <string name="btnTry">Coba Lagi</string>
     <string name="description">Deskripsi</string>
     <string name="submit">Submit</string>
