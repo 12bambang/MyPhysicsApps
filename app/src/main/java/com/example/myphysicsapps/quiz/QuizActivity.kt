@@ -19,7 +19,7 @@ class QuizActivity : AppCompatActivity() {
 
     private val quizData = mutableListOf(
         mutableListOf("Satuan kuat arus listrik dalam SI adalah","Ampere","Volt","Coulomb","Ohm"),//1
-        mutableListOf("Pes3awat sederhana yang digunakan saat mengerek bendera ketika upacara setiap hari Senin adalah","Katrol","Pengungkit","Roda berporos","Bidang miring"), //2
+        mutableListOf("Pesawat sederhana yang digunakan saat mengerek bendera ketika upacara setiap hari Senin adalah","Katrol","Pengungkit","Roda berporos","Bidang miring"), //2
         mutableListOf("Sebuah besi didekatkan dengan sebuah magnet sehingga besi tersebut menjadi magnet dan mampu menarik serbuk besi yang ada di dekatnya, Hal tersebut adalah pembuatan magnet dengan cara", "Induksi","Elektromagnetik", "Gosokan", "Arus listrik"), //3
         mutableListOf("Waktu yang diperlukan oleh bumi untuk berputar pada porosnya dinamakan","Rotasi","Revolusi", "Kala rotasi", "Kala revolusi"), //4
         mutableListOf("Berikut yang termasuk teladan dari energi listrik diubah menjadi energi gerak yakni","kipas angin","lampu","TV","setrika"), //5
@@ -36,6 +36,8 @@ class QuizActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_quiz)
+
+        supportActionBar?.hide()
 
         binding = ActivityQuizBinding.inflate(layoutInflater)
         val view = binding.root

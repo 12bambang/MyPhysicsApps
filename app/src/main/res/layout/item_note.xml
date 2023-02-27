@@ -9,6 +9,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_item_note"
+        app:cardBackgroundColor="#E4A357"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="4dp"
@@ -27,6 +28,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="start"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
                 android:text="@string/date"
                 android:textSize="12sp" />
 
@@ -37,6 +40,8 @@
                 android:layout_marginBottom="4dp"
                 android:gravity="start"
                 android:text="@string/title"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -45,6 +50,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="start"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
                 android:text="@string/description"
                 android:textSize="14sp" />
         </LinearLayout>

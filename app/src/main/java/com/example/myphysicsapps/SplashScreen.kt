@@ -7,6 +7,7 @@ import android.os.Handler
 import android.view.WindowManager
 import android.widget.ImageView
 import com.bumptech.glide.Glide
+import com.example.myphysicsapps.login.LoginActivity
 
 @Suppress("DEPRECATION")
 class SplashScreen : AppCompatActivity() {
@@ -27,7 +28,7 @@ class SplashScreen : AppCompatActivity() {
             .into(LogoSplash)
 
         Handler().postDelayed({
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this,LoginActivity::class.java)
             startActivity(intent)
             finish()
         },3000)

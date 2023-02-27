@@ -7,11 +7,15 @@
     android:fitsSystemWindows="true"
     tools:context=".catatan.Note">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
     <androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/rv_notes"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:listitem="@layout/item_note" />
+        android:id="@+id/rv_notes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_note" />
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -20,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:foregroundGravity="bottom"
+        app:backgroundTint="#C3A640"
         app:fabSize="normal"
         app:layout_anchor="@id/rv_notes"
         app:layout_anchorGravity="bottom|end"

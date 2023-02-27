@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
+import androidx.cardview.widget.CardView
 import com.example.myphysicsapps.catatan.Note
 import com.example.myphysicsapps.materi.MateriActivity
 import com.example.myphysicsapps.quiz.QuizActivity
@@ -19,43 +20,51 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         supportActionBar?.hide()
 
 
-        val imgButtonMateri: ImageButton = findViewById(R.id.imgButtonMateri)
-        imgButtonMateri.setOnClickListener(this)
+        val crdButtonMateri: CardView = findViewById(R.id.btnMateri)
+        crdButtonMateri.setOnClickListener(this)
 
-        val imgButtonVideo: ImageButton = findViewById(R.id.imgButtonVideo)
-        imgButtonVideo.setOnClickListener(this)
+        val crdButtonVideo: CardView = findViewById(R.id.btnVideo)
+        crdButtonVideo.setOnClickListener(this)
 
-        val imgButtonQuiz: ImageButton = findViewById(R.id.imgButtonQuiz)
-        imgButtonQuiz.setOnClickListener(this)
+        val crdButtonQuiz: CardView = findViewById(R.id.btnKuiz)
+        crdButtonQuiz.setOnClickListener(this)
 
-        val imgButtonNote: ImageButton = findViewById(R.id.imgButtonNote)
-        imgButtonNote.setOnClickListener(this )
+        val crdButtonNote: CardView = findViewById(R.id.btnNote)
+        crdButtonNote.setOnClickListener(this)
+
+        val crdButtonAbout: CardView = findViewById(R.id.btnAbout)
+        crdButtonAbout.setOnClickListener(this)
 
     }
     override fun onClick(view: View) {
         when (view.id){
-            R.id.imgButtonMateri ->{
+            R.id.btnMateri ->{
                 val moveMateri = Intent(this@MainActivity, MateriActivity::class.java)
                 moveMateri.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
                 startActivity(moveMateri)
             }
 
-            R.id.imgButtonVideo ->{
+            R.id.btnVideo ->{
                 val moveVideo = Intent(this@MainActivity, VideoActivity::class.java)
                 moveVideo.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
                 startActivity(moveVideo)
             }
 
-            R.id.imgButtonQuiz -> {
+            R.id.btnKuiz -> {
                 val moveQuiz = Intent(this@MainActivity, QuizActivity::class.java)
                 moveQuiz.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
                 startActivity(moveQuiz)
             }
 
-            R.id.imgButtonNote -> {
+            R.id.btnNote -> {
                 val moveNote = Intent(this@MainActivity, Note::class.java)
                 moveNote.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
                 startActivity(moveNote)
+            }
+            R.id.btnAbout -> {
+                val moveAbout = Intent(this@MainActivity,AboutActivity::class.java)
+                moveAbout.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                startActivity(moveAbout)
             }
         }
     }

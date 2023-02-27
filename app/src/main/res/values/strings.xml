@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">MyPhysicsApps2</string>
     <string name="dashboardCourse">Materi</string>
+    <string name="analogi">Analogi</string>
+    <string name="penjelasan">Penjelasan</string>
     <string name="dashboardVideo">Video</string>
     <string name="dashboardJudul">Hi, Siswa dan Siswi</string>
     <string name="dashboardQuiz">Quiz</string>
@@ -33,6 +35,15 @@
     <string name="added">Satu item berhasil ditambahkan</string>
     <string name="changed">Satu item berhasil diubah</string>
     <string name="deleted">Satu item berhasil dihapus</string>
+    <string name="sekolah">SMP Pelita Depok</string>
+    <string name="apps">Physics Apps V.0.1</string>
+    <string name="about">About</string>
+    <string name="detailAbout"> Hi, semua terima kasih untuk mendownload aplikasi aku. aplikasi ini merupakan aplikasi pembelajaran fisika tahap pertama atau Version 1. aku harap aplikasi ini bisa membantu kalian dalam pembelajaran
+
+aku paham kalian semua kesulitan dalam materi pembelajaran fisika aku harap aplikasi ini membantu kalian semua dalam pemahaman materi dasar nya sehingga kalian nantinya bisa mengembangkan ilmu fisika yang lebih lanjut
+
+mungkin aku punya beberapa saran untuk kamu bisa lebih tertarik dengan fisika. kamu bisa menonton film science fiksi semisalnya, Interstellar. atau kamu juga bisa menganalogi dengan kejadian yang ada di dekat kamu sehingga kamu bisa berpikir dan menganalisa layaknya kamu paham dengan hal itu.
+</string>
 
     <string-array name="logo">
         <item>@drawable/logofisika</item>
@@ -162,10 +173,12 @@
                 "Cahaya dapat merambat ke segala arah menurut garis lurus. benda benda yang dapat menghasilkan cahaya disebut sumber cahaya. contoh sumber cahaya matahari, senter, lampu dan api. benda yang tidak dapat memancarkan cahaya disebut benda gelap. benda gelap digolongkan menjadi 2, yaitu benda tembus cahaya dan benda tak tembus cahaya.\n"
                 "pemantulan cahaya (refleksi) adalah pembalikan arah rambatan gelombang cahaya setelah melewati bidang pantul. jenis pemantulan ada 2, yaitu pemantulan teratur dan pemantulan baur. pemantulan teratur terjadi apabila sinar sejajar ditujukan ke permukaan yang rata, sinar itu akan dipantulkan dengan arah teratur. contohnya adalah reflektor yang digunakan fotographer untuk menerangkan objek. dan pemantulan baur, apabila sinar sejajar ditujukan ke permukaan yang tidak rata, sinar akan dipantulkan ke segala arah. peristiwa ini disebut pemantulan baur. contohnya ialah cahaya matahari yang menyinari bumi. Pembiasan cahaya (refraksi), adalah pembelokan arah rambatan gelombang cahaya ketika melewati 2 medium yang memiliki kerapatan berbeda.\n"
                 "Terjadinya pembiasan cahaya telah dibuktikan oleh ilmuwan dari belanda pada tahun 1621 bernama willebrord snellius. hasilnya membuktikan bahwa sinar datang, sinar bias, dan garis normal terletak pada satu bidang datar dan jika sinar datang dari medium yang kurang rapat menuju medium yang lebih rapat, sinar akan dibiaskan mendekati garis normal. jika sinar datang dari medium yang lebih rapat, sinar akan dibiaskan menjauhi garis normal. contoh nya adalah cahaya yang menyinari kolam renang",</item>
-        <item> "cermin adalah suatu benda dengan permukaan yang memantulkan sebagian besar cahaya yang mengenainya. cermin  dapat dibedakan menjadi cermin datar, cermin cekung dan cermin cembung. cermin datar. cermin datar adalah kaca yang salah satu permukaannya datar dan permukaan yang lain dilapisi logam perak. cahaya akan mengalami pemantulan teratur ketika mengenai cermin. sifat bayangan yang terbentuk oleh cermin datar ialah, ukuran bayangan sama dengan benda aslinya, jarak bayangan ke cermin sama dengan jarak benda ke cermin, bayangan yang terbentuk bersifat maya (tidak nyata) atau tidak dapat ditangkap layar, bayangan benda berdiri tegak seperti bendanya, arah kiri dan kanan bangun berlawanan dengan bendanya. cermin cekung adalah cermin yang permukaanya mengkilap dan melengkung ke dalam seperti irisan sebuah bola yang bagian dalamnya mengkilap. seperti halnya cermin datar, cermin cekung juga menghasilkan bayangan benda yang dicerminkan kepadanya\n" +
-                "\n"
+        <item>"cermin adalah suatu benda dengan permukaan yang memantulkan sebagian besar cahaya yang mengenainya. cermin  dapat dibedakan menjadi cermin datar, cermin cekung dan cermin cembung. cermin datar. cermin datar adalah kaca yang salah satu permukaannya datar dan permukaan yang lain dilapisi logam perak. cahaya akan mengalami pemantulan teratur ketika mengenai cermin. sifat bayangan yang terbentuk oleh cermin datar ialah, ukuran bayangan sama dengan benda aslinya, jarak bayangan ke cermin sama dengan jarak benda ke cermin, bayangan yang terbentuk bersifat maya (tidak nyata) atau tidak dapat ditangkap layar, bayangan benda berdiri tegak seperti bendanya, arah kiri dan kanan bangun berlawanan dengan bendanya. cermin cekung adalah cermin yang permukaanya mengkilap dan melengkung ke dalam seperti irisan sebuah bola yang bagian dalamnya mengkilap. seperti halnya cermin datar, cermin cekung juga menghasilkan bayangan benda yang dicerminkan kepadanya.\n"
                 "Lensa adalah benda bening yang dibatasi oleh dua bidang lengkung atau sebuah bidang lengkung dengan sebuah bidang datar. Ada 2 jenis lensa yaitu lensa yaitu lensa cembung dan lensa cekung.\n"
                 "Lensa cembung (Konveks) adalah lensa yang memiliki bagian tengah lebih tebal daripada bagian pinggirnya. lensa cembung dapat berupa lensa cembung-cekung, cembung-datar, cembung-cembung.\n"
                 "Lensa Cekung (Konkaf) adalah lensa yang memiliki bagian tengah lebih tipis daripada bagian tepinya. lensa cekung terdiri dari 3 jenis yaitu lensa cekung-cekung, cekung-datar dan cekung - cembung. lensa cekung memiliki fokus bernilai negatif sehingga sering disebut lensa negatif\n"</item>
+    </string-array>
+    <string-array name="video">
+        <item>Uri.parse("android.resource://$packageName/${R.raw.fisika}")</item>
     </string-array>
 </resources>

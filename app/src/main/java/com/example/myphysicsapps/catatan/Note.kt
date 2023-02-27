@@ -19,6 +19,8 @@ class Note : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        supportActionBar?.title = "Note"
+
         _activitynotebinding = ActivityNoteBinding.inflate(layoutInflater)
         setContentView(binding?.root)
 

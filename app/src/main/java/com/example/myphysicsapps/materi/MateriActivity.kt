@@ -2,52 +2,46 @@ package com.example.myphysicsapps.materi
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myphysicsapps.MateriResponse
 import com.example.myphysicsapps.adapter.MateriAdapter
 import com.example.myphysicsapps.R
+import com.example.myphysicsapps.databinding.ActivityMateriBinding
+import com.example.myphysicsapps.materiViewModel
 
 class MateriActivity : AppCompatActivity() {
-    private lateinit var RvMateri: RecyclerView
-    private var list: ArrayList<Materi> = arrayListOf()
+    private lateinit var binding: ActivityMateriBinding
+    private lateinit var viewModel: materiViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_materi)
+        supportActionBar?.hide()
 
-        RvMateri = findViewById(R.id.RvMateri)
-        RvMateri.setHasFixedSize(true)
+        binding = ActivityMateriBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        list.addAll(listMateri)
-        showRecyclerList()
 
-    }
+        viewModel = ViewModelProvider(
+            this,
+            ViewModelProvider.NewInstanceFactory()
+        ).get(materiViewModel::class.java)
 
-    private val listMateri: ArrayList<Materi>
-        get() {
-            val judul = resources.getStringArray(R.array.judul)
-            val foto = resources.obtainTypedArray(R.array.foto)
-            val analogy = resources.getStringArray(R.array.analogy)
-            val rumus = resources.obtainTypedArray(R.array.rumus)
-            val penjelasan = resources.getStringArray(R.array.penjelasan)
-
-            val listMateri = ArrayList<Materi>()
-            for (i in judul.indices) {
-                val materi = Materi(
-                    judul[i],
-                    foto.getResourceId(i, -1),
-                    analogy[i],
-                    rumus.getResourceId(i, -1),
-                    penjelasan[i])
-                listMateri.add(materi)
-            }
-            return listMateri
+        viewModel.materiSearch.observe(this) {
+            setlistUser(it)
         }
 
-    private fun showRecyclerList() {
-        RvMateri.layoutManager = LinearLayoutManager(this)
-        val listMateriAdapter = MateriAdapter(list)
-        RvMateri.adapter = listMateriAdapter
+        viewModel.SearchMateri()
 
+    }
+    private fun setlistUser(data: MateriResponse){
+        val layoutManager = LinearLayoutManager(this)
+        binding.RvMateri.layoutManager = layoutManager
+        val itemDecoration = DividerItemDecoration(this, layoutManager.orientation)
+        binding.RvMateri.addItemDecoration(itemDecoration)
+        val adapter = MateriAdapter(data)
+        binding.RvMateri.adapter = adapter
     }
 }

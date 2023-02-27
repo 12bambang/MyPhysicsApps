@@ -7,135 +7,215 @@
     android:background="@drawable/dashboardlarge"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/imgButtonMateri"
-        android:layout_width="180dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="16dp"
-        android:backgroundTint="#81CD27"
-        android:src="@drawable/ic_baseline_library_books_24"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnMateri"
+        android:layout_width="126dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="30dp"
+        app:cardBackgroundColor="#78B762"
+        app:cardCornerRadius="10dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintEnd_toStartOf="@+id/btnVideo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258"
-        tools:text="@string/dashboardCourse" />
+        app:layout_constraintVertical_bias="0.228">
 
-    <ImageButton
-        android:id="@+id/imgButtonQuiz"
-        android:layout_width="180dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#DECD32"
-        android:src="@drawable/ic_baseline_quiz_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imgButtonMateri"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imgButtonMateri"
-        app:layout_constraintTop_toBottomOf="@+id/imgButtonMateri"
-        app:layout_constraintVertical_bias="0.0"
-        tools:text="@string/dashboardCourse" />
+        <ImageView
+            android:id="@+id/imgcrdmateri"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center|top"
+            android:foregroundGravity="center"
+            android:src="@drawable/materi" />
 
-    <ImageButton
-        android:id="@+id/imgButtonVideo"
-        android:layout_width="180dp"
-        android:layout_height="200dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#30505F"
-        android:src="@drawable/ic_baseline_ondemand_video_24"
+        <TextView
+            android:id="@+id/txtcrdmateri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:fontFamily="@font/poppins"
+            android:text="@string/dashboardCourse"
+            android:textColor="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnVideo"
+        android:layout_width="126dp"
+        android:layout_height="135dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#1D364E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/imgButtonMateri"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toEndOf="@+id/btnMateri"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258" />
+        app:layout_constraintVertical_bias="0.228">
 
-    <ImageButton
-        android:id="@+id/imgButtonNote"
-        android:layout_width="180dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#817B4C"
-        android:src="@drawable/ic_baseline_event_note_24"
+        <ImageView
+            android:id="@+id/imgcrdvideo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center|top"
+            android:foregroundGravity="center"
+            android:src="@drawable/loadingamico" />
+
+        <TextView
+            android:id="@+id/txtcrdvideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:fontFamily="@font/poppins"
+            android:text="@string/dashboardVideo"
+            android:textColor="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnKuiz"
+        android:layout_width="126dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        app:cardBackgroundColor="#A83535"
+        app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imgButtonVideo"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imgButtonVideo"
-        app:layout_constraintTop_toBottomOf="@+id/imgButtonVideo"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toStartOf="@+id/btnNote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMateri"
+        app:layout_constraintVertical_bias="0.119">
+
+        <ImageView
+            android:id="@+id/imgcrdkuiz"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center|top"
+            android:foregroundGravity="center"
+            android:src="@drawable/customersurveyamico" />
+
+        <TextView
+            android:id="@+id/txtcrdkuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:fontFamily="@font/poppins"
+            android:text="@string/dashboardQuiz"
+            android:textColor="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnNote"
+        android:layout_width="126dp"
+        android:layout_height="135dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#837F5F"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toEndOf="@+id/btnKuiz"
+        app:layout_constraintTop_toBottomOf="@+id/btnVideo"
+        app:layout_constraintVertical_bias="0.116">
+
+        <ImageView
+            android:id="@+id/imgcrdnote"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center|top"
+            android:foregroundGravity="center"
+            android:src="@drawable/taskcuate" />
+
+        <TextView
+            android:id="@+id/txtcrdnote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:fontFamily="@font/poppins"
+            android:text="@string/dashboardNote"
+            android:textColor="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnAbout"
+        android:layout_width="126dp"
+        android:layout_height="135dp"
+        app:cardBackgroundColor="#1F5B93"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnNote"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/btnKuiz"
+        app:layout_constraintTop_toBottomOf="@+id/btnVideo"
+        app:layout_constraintVertical_bias="0.6">
+
+        <ImageView
+            android:id="@+id/imgcrdabout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center|top"
+            android:foregroundGravity="center"
+            android:src="@drawable/faq" />
+
+        <TextView
+            android:id="@+id/txtcrdabout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:fontFamily="@font/poppins"
+            android:text="@string/about"
+            android:textColor="@color/white" />
+
+    </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/siswasiswi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
-        android:fontFamily="@font/poppins"
+        android:fontFamily="@font/poppins_bold"
         android:text="@string/dashboardJudul"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/subJudulMateri"
+        android:id="@+id/sekolah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="sans-serif"
-        android:text="@string/dashboardCourse"
-        android:textColor="#FFFCFC"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/sekolah"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/siswasiswi"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/siswasiswi"
+        app:layout_constraintTop_toBottomOf="@+id/siswasiswi" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/apps"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imgButtonMateri"
-        app:layout_constraintStart_toStartOf="@+id/imgButtonMateri"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.386" />
-
-    <TextView
-        android:id="@+id/subJudulQuiz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="160dp"
-        android:layout_marginEnd="12dp"
-        android:fontFamily="sans-serif"
-        android:text="@string/dashboardQuiz"
-        android:textColor="#FFFCFC"
-        app:layout_constraintEnd_toEndOf="@+id/imgButtonQuiz"
-        app:layout_constraintHorizontal_bias="0.413"
-        app:layout_constraintStart_toStartOf="@+id/imgButtonQuiz"
-        app:layout_constraintTop_toTopOf="@+id/imgButtonQuiz" />
-
-    <TextView
-        android:id="@+id/subJudulVideo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="sans-serif"
-        android:text="@string/dashboardVideo"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imgButtonVideo"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="@+id/imgButtonVideo"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.386" />
-
-    <TextView
-        android:id="@+id/subJudulAboutMe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
-        android:fontFamily="sans-serif"
-        android:text="@string/dashboardNote"
-        android:textColor="#FFFCFC"
-        app:layout_constraintEnd_toEndOf="@+id/imgButtonNote"
-        app:layout_constraintHorizontal_bias="0.513"
-        app:layout_constraintStart_toStartOf="@+id/imgButtonNote"
-        app:layout_constraintTop_toTopOf="@+id/imgButtonNote" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
