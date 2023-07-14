@@ -36,7 +36,7 @@ class MateriAdapter(private val listMateri: MateriResponse): RecyclerView.Adapte
         viewHolder.preview.text = listMateri.data?.get(position)?.attributes?.analogy
 
         Glide.with(viewHolder.materiPic.context)
-            .load("http://192.168.89.8:1337"+ (listMateri.data?.get(position)?.attributes?.profilePic?.data?.attributes?.url))
+            .load("http://192.168.24.8:1337"+ (listMateri.data?.get(position)?.attributes?.profilePic?.data?.attributes?.url))
             .into(viewHolder.materiPic)
 
         //viewHolder.videoView.setVideoPath("http://192.168.167.66:1337"+ (listMateri.data?.get(position)?.attributes?.profilePic?.data?.attributes?.url))
